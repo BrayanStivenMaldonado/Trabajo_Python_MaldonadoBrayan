@@ -1,0 +1,57 @@
+[
+    {
+        "Tipo" : "Panaderia",
+        "Panaderia" : [
+            {
+                "id" : 1,
+                "Nombre" : "Pan de Bono                ",
+                "Precio" : 700
+            },
+            {
+                "id" : 2,
+                "Nombre" : "Pan de Queso               ",
+                "Precio" : 800
+            },
+            {
+                "id" : 3,
+                "Nombre" : "Pan Cascarita              ",
+                "Precio" : 500
+            },
+            {
+                "id" : 4,
+                "Nombre" : "Pan de Yuca                ",
+                "Precio" : 800
+            },
+            {
+                "id" : 5,
+                "Nombre" : "Calentano                  ",
+                "Precio" : 700
+            },
+            {
+                "id" : 6,
+                "Nombre" : "Rollito de Sal             ",
+                "Precio" : 900
+            },
+            {
+                "id" : 7, 
+                "Nombre" : "Pan Integral               ",
+                "Precio" : 700
+            },
+            {
+                "id" : 8,
+                "Nombre" : "Pan relleno de Arequipe    ",
+                "Precio" : 1150
+            },
+            {
+                "id" : 9,
+                "Nombre" : "Pan con Salchicha          ",
+                "Precio" : 1300
+            },
+            {
+                "id" : 10,
+                "Nombre" : "Pan recubierto de Chocolate",
+                "Precio" : 1200
+            }
+        ]
+    }
+]
