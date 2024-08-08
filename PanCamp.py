@@ -17,7 +17,17 @@ def abrirVentas():
     return Ventas
 def guardarVentas(miVenta): 
     with open("Ventas.json","w",encoding='utf-8') as outfile:
-        json.dump(miVenta,outfile)      
+        json.dump(miVenta,outfile,indent=4) 
+
+#FUNCION PARA GUARDAR DATOS DEL JSON QUE CONTIENE EL HISTORIAL DE COMPRAS 
+def abrirCompras():
+    Compras=[]
+    with open('Compras.json','r',encoding='utf-8') as openfile:
+        Compras = json.load(openfile)  
+    return Compras
+def guardarCompras(miCompra): 
+    with open("Compras.json","w",encoding='utf-8') as outfile:
+        json.dump(miCompra,outfile,indent=4)         
 
 #Inicio del programa     
 
@@ -31,8 +41,9 @@ while BoolGeneral == True:
     while boolTryCatch == True:
         try: 
             Eleccion = int(input("""---Bienvenido a PanCamp---
-1. Ventas y Compras
-2. Generación de informes
+1. Ventas
+2. Compras
+3. Reportes 
 3. Cerrar programa
                                  
 ¿A qué apartado desea acceder?: 
@@ -46,9 +57,9 @@ while BoolGeneral == True:
 #                                             INICIO DE LOS MODULOS
 
     if Eleccion == 1:
-        print("---VENTAS Y COMPRAS---")  
         boolVentas = True
         while boolVentas == True:
+            print("---VENTAS---")  
             GeneralData = abrirArchivo()
             contador = 1
             for i in GeneralData:
@@ -76,7 +87,6 @@ while BoolGeneral == True:
             FechaCompra = Fecha.isoformat()
 
             RegistroVentas = abrirVentas()
-            
             RegistroVentas["HistorialVentas"].append(
                 {
                     "Fecha" : FechaCompra,
@@ -100,13 +110,60 @@ while BoolGeneral == True:
             
             system("cls")
             input("Venta realizada con éxito, Presione ENTER para continuar\n")
+            system("cls")
         
 
     elif Eleccion == 2:
-        input("GENERACION DE INFORMES")
+        boolCompras = True
+        while boolCompras == True:
+            print("---COMPRAS---")
+            GeneralData = abrirArchivo()
+            contador = 1
+            for i in GeneralData:
+                print(contador,i["Tipo"])
+                contador += 1
+            print("5 Salir")
+            EleCompras = int(input("\nEscoja el grupo de productos que desea ver: "))
+            system("cls")
+            if EleCompras == 5: 
+                boolCompras = False
+                break
+            print("Nombre del producto")
+            print("")
+            contador = 1
+            for i in GeneralData[EleCompras-1]["Contenido"]:
+                print(contador,i["Nombre"])
+                contador += 1
+            ProductoAdquirir = int(input("\n Ingrese el id del producto que se va a adquirir: "))
+            CantidadAquirir = int(input("Cuántas unidades va a adquirir?: "))
+            Fecha = date.today()
+            FechaAdquirir = Fecha.isoformat()
+            NombreProdAdquirir = GeneralData[EleCompras-1]["Contenido"][ProductoAdquirir-1]["Nombre"]
+            RegistroCompras = abrirCompras()
+            RegistroCompras["HistorialCompras"].append(
+                {
+                    "Fecha" : FechaAdquirir,
+                    "InfoProveedor" : {
+                        "NombreProveedor" : str(input("Nombre del empleado que realizó la venta: ")),
+                        "ContactoProveedor" : str(input("Contacto del proveedor: "))
+                    },
+                    "ProductosComprados" : {
+                        "Nombre" : NombreProdAdquirir,
+                        "Cantidad" : CantidadAquirir,
+                        "PrecioUnidad" : int(input("A qué precio se adquirieron los productos?: "))
+                    }
+                }
+            )
+            guardarCompras(RegistroCompras)
+            system("cls")
+            input("Compra realizada con éxito, Presione ENTER para continuar\n")
+            system("cls")
+
+    elif Eleccion == 2:
+        input("---REPORTES---")
         system("cls")
 
-    elif Eleccion == 3:
+    elif Eleccion == 4:
         input("Gracias por preferir PanCamp, nos vemos luego :D")
         BoolGeneral = False
         system("cls")
