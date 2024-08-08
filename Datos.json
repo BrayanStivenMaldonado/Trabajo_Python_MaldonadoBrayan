@@ -1,56 +1,211 @@
 [
     {
         "Tipo" : "Panaderia",
-        "Panaderia" : [
+        "Contenido" : [
             {
                 "id" : 1,
-                "Nombre" : "Pan de Bono                ",
+                "Nombre" : "Pan de Bono                       ",
                 "Precio" : 700
             },
             {
                 "id" : 2,
-                "Nombre" : "Pan de Queso               ",
+                "Nombre" : "Pan de Queso                      ",
                 "Precio" : 800
             },
             {
                 "id" : 3,
-                "Nombre" : "Pan Cascarita              ",
+                "Nombre" : "Pan Cascarita                     ",
                 "Precio" : 500
             },
             {
                 "id" : 4,
-                "Nombre" : "Pan de Yuca                ",
+                "Nombre" : "Pan de Yuca                       ",
                 "Precio" : 800
             },
             {
                 "id" : 5,
-                "Nombre" : "Calentano                  ",
+                "Nombre" : "Calentano                         ",
                 "Precio" : 700
             },
             {
                 "id" : 6,
-                "Nombre" : "Rollito de Sal             ",
+                "Nombre" : "Rollito de Sal                    ",
                 "Precio" : 900
             },
             {
                 "id" : 7, 
-                "Nombre" : "Pan Integral               ",
+                "Nombre" : "Pan Integral                      ",
                 "Precio" : 700
             },
             {
                 "id" : 8,
-                "Nombre" : "Pan relleno de Arequipe    ",
+                "Nombre" : "Pan relleno de Arequipe           ",
                 "Precio" : 1150
             },
             {
                 "id" : 9,
-                "Nombre" : "Pan con Salchicha          ",
+                "Nombre" : "Pan con Salchicha                 ",
                 "Precio" : 1300
             },
             {
                 "id" : 10,
-                "Nombre" : "Pan recubierto de Chocolate",
+                "Nombre" : "Pan recubierto de Chocolate      ",
                 "Precio" : 1200
+            }
+        ]
+    },
+    {
+        "Tipo" : "Pasteleria",
+        "Contenido" : [
+            {
+                "id" : 1,
+                "Nombre" : "Pastel de Vainilla                 ",
+                "Precio" : 5000
+            },
+            {
+                "id" : 2,
+                "Nombre" : "Pastel de Chocolate                ",
+                "Precio" : 5500
+            },
+            {
+                "id" : 3,
+                "Nombre" : "Pastel de bodas                    ",
+                "Precio" : 10000
+            },
+            {
+                "id" : 4,
+                "Nombre" : "Glaseado de Vainilla               ",
+                "Precio" : 3000
+            },
+            {
+                "id" : 5,
+                "Nombre" : "Glaseado de Chocolate              ",
+                "Precio" : 3500
+            },
+            {
+                "id" : 6,
+                "Nombre" : "Pastel de Arequipe                 ",
+                "Precio" : 5700
+            },
+            {
+                "id" : 7,
+                "Nombre" : "Pastel de Oreo                     ",
+                "Precio" : 7000
+            },
+            {
+                "id" : 8,
+                "Nombre" : "Postre de Limon                    ",
+                "Precio" : 4300
+            },
+            {
+                "id" : 9,
+                "Nombre" : "Postre de Vainilla                 ",
+                "Precio" : 4000
+            },
+            {
+                "id" : 10,
+                "Nombre" : "Postre de Tres Leches             ",
+                "Precio" : 4500
+            }
+        ] 
+    },
+    {
+        "Tipo" : "Bebidas",
+        "Contenido" : [
+            {
+                "id" : 1,
+                "Nombre" : "Coca-Cola                          ",
+                "Precio" : 3000
+            },
+            {
+                "id" : 2,
+                "Nombre" : "Pepsi                              ",
+                "Precio" : 2900
+            },
+            {
+                "id" : 3,
+                "Nombre" : "Red-Bull                           ",
+                "Precio" : 4000
+            },
+            {
+                "id" : 4,
+                "Nombre" : "Gatorade                           ",
+                "Precio" : 3700
+            },
+            {
+                "id" : 5,
+                "Nombre" : "Budweiser                          ",
+                "Precio" : 3200
+            },
+            {
+                "id" : 6,
+                "Nombre" : "Hit                                ",
+                "Precio" : 2500
+            },
+            {
+                "id" : 7,
+                "Nombre" : "Pony-Malta                         ",
+                "Precio" : 2300
+            },
+            {
+                "id" : 8,
+                "Nombre" : "Sprite                             ",
+                "Precio" : 3200
+            },
+            {
+                "id" : 9,
+                "Nombre" : "Monster                            ",
+                "Precio" : 3000
+            },
+            {
+                "id" : 10,
+                "Nombre" : "Tropicana                         ",
+                "Precio" : 2400
+            },
+            {
+                "id" : 11,
+                "Nombre" : "1 Pan con Salchicha y 1 Pony Malta",
+                "Precio" : 3000
+            },
+            {
+                "id" : 12,
+                "Nombre" : "1 Postre de Oreo y 1 Budweiser    ",
+                "Precio" : 9000
+            }
+        ]
+    },
+    {
+        "Tipo" : "Apartado de Promociones",
+        "Contenido" : [
+            {
+                "id" : 1,
+                "Nombre" : "6 Panes Integrales                 ",
+                "Precio" : 4000
+            },
+            {
+                "id" : 2,
+                "Nombre" : "5 Panes recubiertos de Chocolate   ",
+                "Precio" : 5500
+            },
+            {
+                "id" : 3,
+                "Nombre" : "3 Pasteles de Vainilla             ",
+                "Precio" : 13000
+            },
+            {
+                "id" : 4,
+                "Nombre" : "4 Postres de Oreo                  ",
+                "Precio" : 25000
+            },
+            {
+                "id" : 5,
+                "Nombre" : "1 Pan con Salchicha y 1 Pony Malta ",
+                "Precio" : 3000
+            },
+            {
+                "id" : 6,
+                "Nombre" : "1 Postre de Oreo y 1 Budweiser     ",
+                "Precio" : 9000
             }
         ]
     }
