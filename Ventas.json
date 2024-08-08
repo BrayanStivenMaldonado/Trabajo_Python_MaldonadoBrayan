@@ -1,4 +1,38 @@
 {
     "HistorialVentas": [
+        {
+            "Fecha": "2024-08-08",
+            "InfoCliente": {
+                "NombreCliente": "Jose",
+                "DireccionCliente": "Union"
+            },
+            "InfoEmpleado": {
+                "NombreEmpleado": "Brayan",
+                "CargoEmpleado": "Vendedor"
+            },
+            "InfoProducto": {
+                "Nombre": "Pastel de Vainilla                 ",
+                "Cantidad": 2,
+                "PrecioUnidad": 5000,
+                "PrecioTotal": 10000
+            }
+        },
+        {
+            "Fecha": "2024-08-08",
+            "InfoCliente": {
+                "NombreCliente": "Alberto",
+                "DireccionCliente": "Delicias"
+            },
+            "InfoEmpleado": {
+                "NombreEmpleado": "Arnulfo",
+                "CargoEmpleado": "Gerente"
+            },
+            "InfoProducto": {
+                "Nombre": "Pan de Queso                      ",
+                "Cantidad": 12,
+                "PrecioUnidad": 800,
+                "PrecioTotal": 9600
+            }
+        }
     ]
 }

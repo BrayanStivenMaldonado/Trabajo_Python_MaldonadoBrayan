@@ -1,4 +1,28 @@
 {
     "HistorialCompras": [
+        {
+            "Fecha": "2024-08-08",
+            "InfoProveedor": {
+                "NombreProveedor": "Panaderia Qnsabe",
+                "ContactoProveedor": "jum"
+            },
+            "ProductosComprados": {
+                "Nombre": "Pan de Queso                      ",
+                "Cantidad": 12,
+                "PrecioUnidad": 3000
+            }
+        },
+        {
+            "Fecha": "2024-08-08",
+            "InfoProveedor": {
+                "NombreProveedor": "Postobon SAS",
+                "ContactoProveedor": "qnsabe"
+            },
+            "ProductosComprados": {
+                "Nombre": "Coca-Cola                          ",
+                "Cantidad": 50,
+                "PrecioUnidad": 2800
+            }
+        }
     ]
 }

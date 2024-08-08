@@ -144,7 +144,7 @@ while BoolGeneral == True:
                 {
                     "Fecha" : FechaAdquirir,
                     "InfoProveedor" : {
-                        "NombreProveedor" : str(input("Nombre del empleado que realizó la venta: ")),
+                        "NombreProveedor" : str(input("Nombre del proveedor: ")),
                         "ContactoProveedor" : str(input("Contacto del proveedor: "))
                     },
                     "ProductosComprados" : {
@@ -159,9 +159,38 @@ while BoolGeneral == True:
             input("Compra realizada con éxito, Presione ENTER para continuar\n")
             system("cls")
 
-    elif Eleccion == 2:
-        input("---REPORTES---")
-        system("cls")
+    elif Eleccion == 3:
+        boolReportes = True
+        while boolReportes == True:
+            EleReportes= int(input(""""---REPORTES---
+1 Ver ventas
+2 Ver compras\n"""))
+            if EleReportes == 1:
+                RegistroVentas = abrirVentas()
+                for i in RegistroVentas["HistorialVentas"]:
+                    print(i["Fecha"])
+                    print(i["InfoCliente"])
+                    print(i["InfoEmpleado"])
+                    print(i["InfoProducto"])
+                input("Presione ENTER para continuar")
+                system("cls")
+
+            elif EleReportes == 2:
+                RegistroCompras = abrirCompras()
+                for i in RegistroCompras["HistorialCompras"]:
+                    print(i["Fecha"])
+                    print(i["InfoProveedor"])
+                    print(i["ProductosComprados"])
+                input("Presione ENTER para continuar")
+                system("cls")
+
+            elif EleReportes == 3:
+                system("cls")
+                boolReportes = False
+            
+            else:
+                input("Esta no es una opción válida, presione ENTER para continuar\n")
+
 
     elif Eleccion == 4:
         input("Gracias por preferir PanCamp, nos vemos luego :D")
