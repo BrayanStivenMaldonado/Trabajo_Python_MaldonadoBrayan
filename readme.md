@@ -20,7 +20,7 @@ Dentro de este programa el acceso a los modulos está organizado por medio de me
 
 ## Funcionalidades 
 
-El programa está dividido en diferentes modulos, los cuales contienen diferentes funcionalidades,las cuales son:
+El programa está dividido en diferentes modulos, los cuales contienen diferentes funcionalidades, que son:
 
 **Ventas:** El sistema de gestión permite registrar cada transacción de venta con la siguiente información: 
 - Fecha de la venta.
